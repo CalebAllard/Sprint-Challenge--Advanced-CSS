@@ -1,12 +1,24 @@
 // Mixins Here
 .btn-style(@btn-color: @sea-shell,@btn-background: @ebony-clay){
-    color:@btn-color;
-    background-color:@btn-background;
-    // width:@btn-width;
-    font-size:1.6rem;
-    padding:1rem 0;
-    text-align:center;
-    border-radius:5px;
+    a{
+        color:@btn-color;
+        background-color:@btn-background;
+        width:auto;
+        font-size:1.6rem;
+        padding:1rem 5rem;
+        text-align:center;
+        border-radius:5px;
+        &:hover{
+            color:@btn-background;
+            background-color:@btn-color;
+        }
+    }
 
+}
 
+.flex-style(@flexdirection,@justify){
+    display:flex;
+    flex-direction:@flexdirection;
+    justify-content:@justify
+   
 }

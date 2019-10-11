@@ -225,6 +225,8 @@ footer {
 }
 .home .space-images {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -261,6 +263,7 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 @media (max-width:500px) {
@@ -286,18 +289,21 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text .btn a {
   color: #F1F1F1;
   background-color: #23293B;
+  width: auto;
   font-size: 1.6rem;
-  padding: 1rem 0;
+  padding: 1rem 5rem;
   text-align: center;
   border-radius: 5px;
 }
+.home .walk .walk-text .btn a:hover {
+  color: #23293B;
+  background-color: #F1F1F1;
+}
 .home .walk .walk-text .btn a {
   text-decoration: none;
-  color: inherit;
-  width: 100%;
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
@@ -325,6 +331,7 @@ footer {
 }
 .signup section {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 5rem 0;
   color: #5E6164;
@@ -354,6 +361,7 @@ footer {
 .signup section .form-input form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media (max-width:1000px) {
   .signup section .form-input form {
