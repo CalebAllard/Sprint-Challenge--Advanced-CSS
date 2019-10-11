@@ -240,6 +240,11 @@ p {
   text-align: center;
   border-radius: 5px;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
     height: 5rem;
@@ -263,6 +268,74 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.signup section {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+  color: #5E6164;
+}
+@media (max-width:1000px) {
+  .signup section {
+    padding: 5rem 1rem;
+    flex-direction: column;
+  }
+}
+.signup section .form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+}
+@media (max-width:1000px) {
+  .signup section .form-input {
+    order: 1;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+.signup section .form-input h2 {
+  padding-bottom: 1rem;
+}
+.signup section .form-input form {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width:1000px) {
+  .signup section .form-input form {
+    width: 50%;
+  }
+}
+.signup section .form-input form label {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.signup section .form-input form input {
+  margin-bottom: 1rem;
+}
+.signup section .form-input form button {
+  width: 25%;
+  background-color: #23293B;
+  color: #F6F6F6;
+  border: none;
+  padding: 0.5rem 2rem;
+}
+@media (max-width:500px) {
+  .signup section .form-input form button {
+    width: 50%;
+  }
+}
+.signup section .form-img {
+  width: 45%;
+}
+@media (max-width:1000px) {
+  .signup section .form-img {
+    order: 2;
+    width: 100%;
+  }
+}
+.signup section .form-img img {
+  max-width: 100%;
 }
 nav {
   background-color: #F6F6F6;
@@ -289,7 +362,7 @@ nav h1 {
 nav .nav-cont {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 35%;
 }
 @media (max-width:1000px) {
   nav .nav-cont {
