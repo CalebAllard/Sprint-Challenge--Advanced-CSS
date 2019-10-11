@@ -1,1 +1,40 @@
 // Navigation code here
+nav{
+    background-color:@nav-bg;
+    border:1px solid @nav-border;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:@main-font-color;
+
+    width:80%;
+    margin:0 auto;
+    @media @view-width{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto; 
+    }
+    h1{
+        font-size:2.6rem;
+        padding: 1rem 0;
+    }
+    .nav-cont{
+        display:flex;
+        justify-content:space-between;
+        width:25%;
+        @media @view-width{
+            width:50%;
+        }
+        @media @mobile{
+            width:80%;
+        }
+        a{
+            text-decoration:none;
+            color:inherit;
+            font-size:1.2rem;
+            font-weight:bold;
+            padding: 1rem 0;
+        }
+    }
+}
