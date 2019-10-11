@@ -155,6 +155,9 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+img {
+  border-radius: 10px;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -292,7 +295,6 @@ footer {
 .home .walk .walk-text .btn a {
   color: #F1F1F1;
   background-color: #23293B;
-  width: auto;
   font-size: 1.6rem;
   padding: 1rem 5rem;
   text-align: center;
@@ -304,6 +306,8 @@ footer {
 }
 .home .walk .walk-text .btn a {
   text-decoration: none;
+  width: 100%;
+  display: block;
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
